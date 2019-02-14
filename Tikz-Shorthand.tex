@@ -1,0 +1,12 @@
+\centering
+\begin{tikzpicture}
+	\draw[fill,blue] (-1.5,0) rectangle (-0.5,2);
+	\draw (-0.5,0) rectangle (0.5,2);
+	\filldraw[red] (0.5,0) rectangle (1.5,2);
+
+	\path coordinate (a) at (-1,3);
+	\coordinate (b) at (1,3);
+	\path node[left] at (a) {Left};
+	\node[right] at (b) {Right};
+	\draw[<->] (a) -- (b);
+\end{tikzpicture}
